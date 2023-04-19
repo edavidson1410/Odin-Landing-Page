@@ -15,11 +15,43 @@ ul {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-    background-color: #1f2937;
+    padding: 0 50px; 
+    background-color: #1e6129fd;
     color: #f9faf8;
     font-size: 24px;
+    border-bottom: 5px solid rgba(126, 32, 32, 0.548);
 }
+
+.left-links {
+  display: flex;
+  gap: 10px;
+}
+
+.left-links img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* removes space below img */
+  height: 25px;
+  width: 25px;
+}
+
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+ }
+
+ a:hover {
+  color:  rgba(126, 32, 32, 0.548);
+ }
+
 
 /* Everything in hero section */
 
@@ -29,24 +61,14 @@ ul {
     color: #f9faf8;
  }
 
- .right-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
- }
-
- #subtext-link {
-   font-size: 18px;
-   color: #e5e7eb;
- }
-
  .hero {
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #1f2937;
+    background-color: #1e6129fd;
+    padding: 50px;
  }
 
  .hero-left,
@@ -54,15 +76,28 @@ ul {
    flex: 0 1 25em;
  }
 
+#subtext-link {
+  margin: 10px 0;
+}
+
  .hero img {
    background-color: grey;
  }
+
  button {
    color: white;
    background-color: #3882f6;
    border-radius: 5px;
    border: 0px;
    padding: 5px 20px;
+ }
+
+ #cover {
+   max-width: 100%;
+   max-height: 100%;
+   display: block; /* removes space below img */
+   height: 250px;
+   min-width: 250px;
  }
 
  /* illustration section */
@@ -72,6 +107,7 @@ ul {
    font-size: 36px;
    font-weight: 800;
    color: #1f2937;
+   padding: 20px;
  }
 
  .illustrations ul {
@@ -84,6 +120,13 @@ ul {
  .illustrations li {
    border-radius: 5px;
    border: 3px solid #3882f6;
+ }
+ 
+ img {
+   max-width: 100%;
+   max-height: 100%;
+   display: block; /* removes space below img */
+   width: 200px;
  }
 
  /* quote section */
@@ -138,7 +181,7 @@ ul {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #1f2937;
+   background-color: #1e6129fd;
    color: white;
    font-size: 10px;
    padding: 10px 0;
